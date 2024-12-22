@@ -11,7 +11,7 @@ connector = sqlite3.connect('library.db')
 cursor = connector.cursor()
 
 connector.execute(
-'CREATE TABLE IF NOT EXISTS Library (BK_NAME TEXT, BK_ID TEXT PRIMARY KEY NOT NULL, AUTHOR_NAME TEXT, BK_STATUS TEXT, CARD_ID TEXT)'
+'CREATE TABLE IF NOT EXISTS library (BK_NAME TEXT, BK_ID TEXT PRIMARY KEY NOT NULL, AUTHOR_NAME TEXT, BK_STATUS TEXT, CARD_ID TEXT)'
 )
 
 # Functions
